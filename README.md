@@ -3,15 +3,26 @@
 ## Environment
 
 | os | nvidia-driver | cuda | cudnn | GPU |
-| --- | --- | --- | --- |--- |--- |--- |
+| --- | --- | --- | --- |--- |
 | ubuntu 18.04 (64) | 390.48 | 9.0 | 7.0 | GeForce 1060(6G) |
 
 ## Summary
 
+下列比較是基於 YOLOv3 和 M2Det paper 所公開的 pretrained model 來比較
+
+- M2Det
+
+  1. 這邊所使用的 M2Det 是 vgg512 版本
+
+- YOLOv3
+
+  1. 這邊所使用的 YOLOv3 是 320 版本
+
+
 | Model | parameter size | fps | excute time |
 | --- | --- | --- | --- |--- |--- |--- |
-| YOLOv3 |  |  |  |
-| M2Det | |  |  |
+| YOLOv3 |  | 3 |  |
+| M2Det | | 8 |  |
 
 ## Reference
 
