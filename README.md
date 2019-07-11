@@ -14,7 +14,7 @@
 
   1. 這邊所使用的 M2Det 是 vgg512 版本
   2. python 3367, GPU 3990 MiB
-  
+
 - YOLOv3
 
   1. 這邊所使用的 YOLOv3 是 320 版本
@@ -36,3 +36,9 @@
 - [YOLOv3 Source Code](https://github.com/iArunava/YOLOv3-Object-Detection-with-OpenCV)
 
 - [M2Det Source Code](https://github.com/qijiezhao/M2Det)
+
+- [YOLOv1 paper](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf)
+
+- [YOLOv2 paper](http://openaccess.thecvf.com/content_cvpr_2017/papers/Redmon_YOLO9000_Better_Faster_CVPR_2017_paper.pdf)
+
+- [YOLOv3 paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
