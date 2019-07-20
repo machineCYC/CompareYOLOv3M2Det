@@ -29,7 +29,9 @@
     - 在最後 fine tune detection 時，引入 Multi-Scale Training，也就是輸入圖像是動態的
 
 - YOLOv3
-
+    - 類別預測 softmax 更改成 sigmoid，可以面對 label 是有 overlap (person、woman)
+    - 在三個不同 scale size 上做偵測，可以針對小的物件提高預測的能力
+    - pooling 的部分全改成捲基層
 
 ## Summary
 
