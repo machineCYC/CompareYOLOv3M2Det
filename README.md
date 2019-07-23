@@ -37,16 +37,15 @@
 
 下列比較是基於 YOLOv3 和 M2Det paper 所公開的 pretrained model 來比較
 
-- M2Det
+- 這邊所使用的 M2Det 是 vgg512 版本
+- YOLOv3 則是 320、416、608 版本
+- 實測上 yolov3 速度相對於 m2det 來的慢, 目前推測是 m2det 運算的方式有較多可以透過 GPU 加速 (在 run code 過程中有注意到 GPU 使用量)
+- 不論是 yolov3 還是 m2det 對於間隔倒的鐵柵欄都會勿判成腳踏車 (如下列圖示), 其中 yolov3(下下圖60%左右) 的 confidence 右更勝於 m2det(下圖30％左右)
+- 至於目前大家比較在意小物件的偵測狀況,個人認為由這隻影片觀察兩者是似乎差不多的
 
-  1. 這邊所使用的 M2Det 是 vgg512 版本
-  2. train data 使用
-  3. 測試影片結果及想法
-  2. python 3367, GPU 3990 MiB
+![](img/m2det.png)
 
-- YOLOv3
-
-  1. 這邊所使用的 YOLOv3 是 320、416、608 版本
+![](img/yolov3.png)
 
 
 | Model | fps | excute time | total frame |
@@ -55,6 +54,8 @@
 | YOLOv3-416 | 3.34 | 1790.327 | 5986 |
 | YOLOv3-608 | 3.3 | 1813.77 | 5986 |
 | M2Det | 7.38 | 810.64 | 5986 |
+
+M2Det: python 3367, GPU 3990 MiB
 
 ## Reference
 
